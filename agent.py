@@ -169,14 +169,49 @@ MAKE SURE YOUR IS A VALID DICTIONARY
 # 3. MAIN EXECUTION BLOCK
 # ==============================================================================
 
+# ... (all your functions, imports, and definitions remain above here) ...
+
+
+# ==============================================================================
+# 3. MAIN EXECUTION BLOCK (Updated for Polling)
+# ==============================================================================
+import time # Tool for pausing the script if needed
+import shutil # Tool for moving files
+
 if __name__ == "__main__":
     image_directory = "img" 
+    processed_directory = "img_processed"
     
-    jpg_files = list(Path(image_directory).glob("*.jpg"))
+    # 1. Ensure the processed folder exists
+    os.makedirs(processed_directory, exist_ok=True)
+    
+    # 2. Find all files to process
+    # Note: .glob() finds file paths, we need to iterate over them
+    jpg_files_to_process = list(Path(image_directory).glob("*.jpg"))
 
-    if jpg_files:
-        file_path = random.choice(jpg_files)
-        print(f"Calling agent for file_path: {file_path}")
-        agent(file_path)
+    if jpg_files_to_process:
+        print(f"📂 Found {len(jpg_files_to_process)} file(s) to process...")
+        
+        # 3. Loop through every single file found
+        for file_path in jpg_files_to_process:
+            
+            print("="*60)
+            print(f"🚀 Starting agent for file: {file_path.name}")
+            
+            # Call your main agent function to process the file
+            agent(file_path)
+            
+            # 4. Once processing is done (successfully or with errors):
+            # Move the file to the processed folder to prevent re-processing it next time
+            try:
+                destination_path = os.path.join(processed_directory, file_path.name)
+                shutil.move(file_path, destination_path)
+                print(f"✅ File successfully moved to: {processed_directory}")
+            except Exception as e:
+                print(f"❌ Error moving file {file_path.name}: {e}")
+            
+            print("="*60)
+            
     else:
-        print(f"⚠️ No .jpg files found in the '{image_directory}' directory.")
+        print(f"😴 No new .jpg files found in the '{image_directory}' directory.")
+        # If running as a scheduled task, the script would end here and wait for the next run.
