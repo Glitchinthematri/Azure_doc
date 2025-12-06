@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 13.30,
+  "total_amount_after_tax": 14.10,
+  "items": [
+    {
+      "item_name": "HE EOG UNICORN TWIN SUPER GLUE USG-99-",
+      "item_amount": 5.20
+    },
+    {
+      "item_name": "SS EZL A4 CYBER MIX COLOR PAPER 100'S8",
+      "item_amount": 8.90
+    }
+  ]
+}
+```

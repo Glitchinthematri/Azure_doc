@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 179.25,
+  "total_amount_after_tax": 190.00,
+  "items": [
+    {
+      "item_name": "HEINEKEN (5 BTL)",
+      "item_amount": 190.00
+    }
+  ]
+}
+```

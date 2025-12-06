@@ -1,0 +1,28 @@
+```json
+{
+  "total_amount_before_tax": 106.10,
+  "total_amount_after_tax": 112.46,
+  "items": [
+    {
+      "item_name": "11\" PROWESS H/DUTY SILICONE GUN G-D2",
+      "item_amount": 15.00
+    },
+    {
+      "item_name": "XTRASEAL RIV ACETIC SILICONE SA-107",
+      "item_amount": 21.00
+    },
+    {
+      "item_name": "CENTRAL PUNCH SET 3PCS - 1/4\",5/32\".1/4\"",
+      "item_amount": 18.00
+    },
+    {
+      "item_name": "24\" MARKSMAN PIPE WRENCH",
+      "item_amount": 50.00
+    },
+    {
+      "item_name": "PVC WIRE TAPE 1PC X 7YD",
+      "item_amount": 2.10
+    }
+  ]
+}
+```

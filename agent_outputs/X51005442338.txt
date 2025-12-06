@@ -1,0 +1,36 @@
+```json
+{
+  "total_amount_before_tax": 28.60,
+  "total_amount_after_tax": 28.67,
+  "items": [
+    {
+      "item_name": "VEGETABLES",
+      "item_amount": 2.20
+    },
+    {
+      "item_name": "LTK OMEGA PLUS 105",
+      "item_amount": 5.70
+    },
+    {
+      "item_name": "VEGETABLES",
+      "item_amount": 1.00
+    },
+    {
+      "item_name": "VEGETABLES",
+      "item_amount": 2.00
+    },
+    {
+      "item_name": "VEGETABLES",
+      "item_amount": 8.00
+    },
+    {
+      "item_name": "SEAFOOD",
+      "item_amount": 8.50
+    },
+    {
+      "item_name": "FISH BALL / CAKE",
+      "item_amount": 1.20
+    }
+  ]
+}
+```

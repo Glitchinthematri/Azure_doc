@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 52.00,
+  "total_amount_after_tax": 55.10,
+  "items": [
+    {
+      "item_name": "CBE BADGE CLIP 100PCS",
+      "item_amount": 24.00
+    },
+    {
+      "item_name": "NISO A4 LAMINATING FILM",
+      "item_amount": 28.00
+    }
+  ]
+}
+```

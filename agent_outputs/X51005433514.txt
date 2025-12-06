@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 7.74,
+  "total_amount_after_tax": 8.20,
+  "items": [
+    {
+      "item_name": "SR 100100000035- 1 Meat + 3 Vege",
+      "item_amount": 7.10
+    },
+    {
+      "item_name": "SR 100100000015- Vegetable",
+      "item_amount": 1.10
+    }
+  ]
+}
+```

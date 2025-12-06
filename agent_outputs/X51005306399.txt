@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 81.13,
+  "total_amount_after_tax": 86.00,
+  "items": [
+    {
+      "item_name": "V- Power 97",
+      "item_amount": 81.13
+    }
+  ]
+}
+```

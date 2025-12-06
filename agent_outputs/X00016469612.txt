@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 9.00,
+  "total_amount_after_tax": 9.00,
+  "items": [
+    {
+      "item_name": "KF MODELLING CLAY KIDDY FISH",
+      "item_amount": 9.00
+    }
+  ]
+}
+```

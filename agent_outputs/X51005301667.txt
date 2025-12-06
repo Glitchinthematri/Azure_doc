@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 37.55,
+  "total_amount_after_tax": 39.80,
+  "items": [
+    {
+      "item_name": "1059 18W SQ WW BK SUR LED LIGHT 1059 SQUARE BLACK FRAME",
+      "item_amount": 37.55
+    }
+  ]
+}
+```

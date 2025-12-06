@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 70.75,
+  "total_amount_after_tax": 75.00,
+  "items": [
+    {
+      "item_name": "AMBROSIAL GREEK",
+      "item_amount": 70.75
+    }
+  ]
+}
+```

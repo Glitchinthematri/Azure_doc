@@ -1,0 +1,24 @@
+```json
+{
+  "total_amount_before_tax": 179.00,
+  "total_amount_after_tax": 189.75,
+  "items": [
+    {
+      "item_name": "Tiger 2 Bucket - HH",
+      "item_amount": 95.00
+    },
+    {
+      "item_name": "Chicken wings",
+      "item_amount": 22.00
+    },
+    {
+      "item_name": "French Fries",
+      "item_amount": 12.00
+    },
+    {
+      "item_name": "Tiger Bucket- HH",
+      "item_amount": 50.00
+    }
+  ]
+}
+```

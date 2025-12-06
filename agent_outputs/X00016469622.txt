@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 80.91,
+  "total_amount_after_tax": 80.90,
+  "items": [
+    {
+      "item_name": "ELEGANT SCH TR BAG 15",
+      "item_amount": 80.91
+    }
+  ]
+}
+```

@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 14.15,
+  "total_amount_after_tax": 15.00,
+  "items": [
+    {
+      "item_name": "2000160000024 20\" 1.6KG x 500MM BIG STRETCH FILM",
+      "item_amount": 15.00
+    }
+  ]
+}
+```

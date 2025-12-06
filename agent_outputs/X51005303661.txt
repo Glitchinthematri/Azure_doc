@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 68.87,
+  "total_amount_after_tax": 73.00,
+  "items": [
+    {
+      "item_name": "T5 JOINT 2PIN 2PCS",
+      "item_amount": 2.83
+    },
+    {
+      "item_name": "YE30 BK 7W WW LED TRACK LIGHT",
+      "item_amount": 66.04
+    }
+  ]
+}
+```

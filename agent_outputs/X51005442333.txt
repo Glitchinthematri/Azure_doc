@@ -1,0 +1,20 @@
+```json
+{
+  "total_amount_before_tax": 6.51,
+  "total_amount_after_tax": 6.90,
+  "items": [
+    {
+      "item_name": "Fried Noodle (S)",
+      "item_amount": 2.00
+    },
+    {
+      "item_name": "Pork",
+      "item_amount": 2.70
+    },
+    {
+      "item_name": "Vegetable",
+      "item_amount": 2.20
+    }
+  ]
+}
+```

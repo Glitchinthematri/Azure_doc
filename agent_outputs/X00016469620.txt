@@ -1,0 +1,24 @@
+```json
+{
+  "total_amount_before_tax": 33.92,
+  "total_amount_after_tax": 33.90,
+  "items": [
+    {
+      "item_name": "CHOPPING BOARD 35.5x25.5CM",
+      "item_amount": 19.00
+    },
+    {
+      "item_name": "AIR PRESSURE SPRAYER SX-575-1 1.5L",
+      "item_amount": 8.02
+    },
+    {
+      "item_name": "WAXCO WINDSHILED CLEANER 120ML",
+      "item_amount": 3.02
+    },
+    {
+      "item_name": "BOPP TAPE 48MM*100M CLEAR",
+      "item_amount": 3.88
+    }
+  ]
+}
+```

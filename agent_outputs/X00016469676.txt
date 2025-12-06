@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 20.00,
+  "total_amount_after_tax": 20.00,
+  "items": [
+    {
+      "item_name": "4132 CROCS 300x17 TUBES",
+      "item_amount": 20.00
+    }
+  ]
+}
+```

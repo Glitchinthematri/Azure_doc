@@ -1,0 +1,28 @@
+```json
+{
+  "total_amount_before_tax": 30.91,
+  "total_amount_after_tax": 30.90,
+  "items": [
+    {
+      "item_name": "KILAT'AUTO ECO WASH & SHINE ES1000 1L",
+      "item_amount": 3.11
+    },
+    {
+      "item_name": "KILAT' ECO AUTO WASH &WAX EW-1000-1L",
+      "item_amount": 4.62
+    },
+    {
+      "item_name": "WD40 277ml MOQ 2572",
+      "item_amount": 11.23
+    },
+    {
+      "item_name": "KLEENSO AJAIB 99 SERAI WANYI 900G",
+      "item_amount": 7.45
+    },
+    {
+      "item_name": "HANDKERCHIEF 71386#2PCS",
+      "item_amount": 4.50
+    }
+  ]
+}
+```

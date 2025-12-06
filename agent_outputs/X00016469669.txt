@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 31.00,
+  "total_amount_after_tax": 31.00,
+  "items": [
+    {
+      "item_name": "Plastic",
+      "item_amount": 31.00
+    }
+  ]
+}
+```

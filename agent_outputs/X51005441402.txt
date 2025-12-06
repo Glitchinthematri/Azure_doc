@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 150.00,
+  "total_amount_after_tax": 174.90,
+  "items": [
+    {
+      "item_name": "HH GUINESS 12 GLASSES",
+      "item_amount": 150.00
+    }
+  ]
+}
+```

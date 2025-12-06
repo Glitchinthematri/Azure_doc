@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 16.98,
+  "total_amount_after_tax": 18.00,
+  "items": [
+    {
+      "item_name": "DOUBLE SIDED TISSUE TAPE 18MM",
+      "item_amount": 6.60
+    },
+    {
+      "item_name": "G SOFT 6ML QUICK DRY CORRECTION PEN",
+      "item_amount": 10.38
+    }
+  ]
+}
+```

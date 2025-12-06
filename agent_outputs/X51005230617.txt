@@ -1,0 +1,20 @@
+```json
+{
+  "total_amount_before_tax": 25.09,
+  "total_amount_after_tax": 26.60,
+  "items": [
+    {
+      "item_name": "ChicMcMuffin",
+      "item_amount": 11.00
+    },
+    {
+      "item_name": "M Porridge",
+      "item_amount": 5.60
+    },
+    {
+      "item_name": "BM 2HotCakes 1 L Coke",
+      "item_amount": 10.00
+    }
+  ]
+}
+```

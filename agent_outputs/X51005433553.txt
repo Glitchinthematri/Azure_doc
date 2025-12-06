@@ -1,0 +1,20 @@
+```json
+{
+  "total_amount_before_tax": 12.36,
+  "total_amount_after_tax": 13.10,
+  "items": [
+    {
+      "item_name": "Green Tea",
+      "item_amount": 1.50
+    },
+    {
+      "item_name": "Kake Udon R",
+      "item_amount": 8.80
+    },
+    {
+      "item_name": "Enoki Tempura",
+      "item_amount": 2.80
+    }
+  ]
+}
+```

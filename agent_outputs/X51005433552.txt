@@ -1,0 +1,20 @@
+```json
+{
+  "total_amount_before_tax": 49.60,
+  "total_amount_after_tax": 57.80,
+  "items": [
+    {
+      "item_name": "SABA SHIO YAKI SET",
+      "item_amount": 53.70
+    },
+    {
+      "item_name": "SALMON SHIO SET",
+      "item_amount": 21.90
+    },
+    {
+      "item_name": "ICED GREEN TEA",
+      "item_amount": 4.00
+    }
+  ]
+}
+```

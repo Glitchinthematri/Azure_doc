@@ -1,0 +1,20 @@
+```json
+{
+  "total_amount_before_tax": 35.00,
+  "total_amount_after_tax": 37.10,
+  "items": [
+    {
+      "item_name": "SOURING PAD 1018-4 48",
+      "item_amount": 11.20
+    },
+    {
+      "item_name": "SCISSOR G/FISH",
+      "item_amount": 3.00
+    },
+    {
+      "item_name": "TRAILING SKT 5GN+SP 3X1.25MM CABLE 2",
+      "item_amount": 22.90
+    }
+  ]
+}
+```

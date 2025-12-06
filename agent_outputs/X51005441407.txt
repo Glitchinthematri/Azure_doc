@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 60.50,
+  "total_amount_after_tax": 64.15,
+  "items": [
+    {
+      "item_name": "S Tiger Bucket GTG02",
+      "item_amount": 55.00
+    },
+    {
+      "item_name": "Service Charge",
+      "item_amount": 5.50
+    }
+  ]
+}
+```

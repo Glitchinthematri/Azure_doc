@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 7.55,
+  "total_amount_after_tax": 8.00,
+  "items": [
+    {
+      "item_name": "CAR PARKING COUPON",
+      "item_amount": 7.55
+    }
+  ]
+}
+```

@@ -1,0 +1,44 @@
+```json
+{
+  "total_amount_before_tax": 31.03,
+  "total_amount_after_tax": 32.70,
+  "items": [
+    {
+      "item_name": "DELICIA CHOCOLATE [50G]",
+      "item_amount": 15.25
+    },
+    {
+      "item_name": "GARDENIA ORIGINAL CLASSIC JUMBO [600G]",
+      "item_amount": 3.55
+    },
+    {
+      "item_name": "HU IS LIME 50G",
+      "item_amount": 1.50
+    },
+    {
+      "item_name": "DOREMON CATCAT JOY 15G",
+      "item_amount": 1.51
+    },
+    {
+      "item_name": "DOREMON CATCAT JOY 15G",
+      "item_amount": 1.51
+    },
+    {
+      "item_name": "MINUTE MAID PULPY [OREN] [350ML]",
+      "item_amount": 2.44
+    },
+    {
+      "item_name": "MINUTE MAID PULTY JOREN! [350ML]",
+      "item_amount": 2.44
+    },
+    {
+      "item_name": "UNGE LEMON DRINK 500ML",
+      "item_amount": 1.60
+    },
+    {
+      "item_name": "100 P: JS [1 5 ]",
+      "item_amount": 2.90
+    }
+  ]
+}
+```

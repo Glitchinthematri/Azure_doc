@@ -1,0 +1,28 @@
+```json
+{
+  "total_amount_before_tax": 51.42,
+  "total_amount_after_tax": 54.50,
+  "items": [
+    {
+      "item_name": "BRAISED PORK RICE WITH PEANUT",
+      "item_amount": 14.00
+    },
+    {
+      "item_name": "ROAST PORK - SMALL",
+      "item_amount": 12.00
+    },
+    {
+      "item_name": "SOUR & SPICY MUSTARD",
+      "item_amount": 12.00
+    },
+    {
+      "item_name": "JASMINE GREEN TEA(HOT)",
+      "item_amount": 4.60
+    },
+    {
+      "item_name": "ROAST PORK + ROAST CHICKEN RICE",
+      "item_amount": 11.90
+    }
+  ]
+}
+```

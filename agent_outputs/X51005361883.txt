@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 4.60,
+  "total_amount_after_tax": 4.90,
+  "items": [
+    {
+      "item_name": "JIANYU STELL RULER 30CM THICK",
+      "item_amount": 3.30
+    },
+    {
+      "item_name": "LAMINATE FILM",
+      "item_amount": 1.30
+    }
+  ]
+}
+```

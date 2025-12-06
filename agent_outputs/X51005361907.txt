@@ -1,0 +1,36 @@
+```json
+{
+  "total_amount_before_tax": 144.68,
+  "total_amount_after_tax": 153.35,
+  "items": [
+    {
+      "item_name": "IK YELLOW 70GRAMS",
+      "item_amount": 105.66
+    },
+    {
+      "item_name": "PAPYRUS DARK COLOUR PAPER",
+      "item_amount": 17.45
+    },
+    {
+      "item_name": "ARTLINE 70",
+      "item_amount": 2.70
+    },
+    {
+      "item_name": "FASTER CX5N BALL PEN",
+      "item_amount": 0.85
+    },
+    {
+      "item_name": "CBE HANDYCUTTER",
+      "item_amount": 1.70
+    },
+    {
+      "item_name": "CBE A4 SIZE 20 POCKETS REFILLABLE NEW CLEAR HOLDER",
+      "item_amount": 8.40
+    },
+    {
+      "item_name": "EAGLE F4 120 NUMBERING FOOLSCAP BOOK",
+      "item_amount": 7.92
+    }
+  ]
+}
+```

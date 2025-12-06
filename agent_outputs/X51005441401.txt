@@ -1,0 +1,16 @@
+```json
+{
+  "total_amount_before_tax": 295.00,
+  "total_amount_after_tax": 343.95,
+  "items": [
+    {
+      "item_name": "HH GUINESS 12 GLASSES",
+      "item_amount": 150.00
+    },
+    {
+      "item_name": "HH TIGER 12 GLASSES",
+      "item_amount": 145.00
+    }
+  ]
+}
+```

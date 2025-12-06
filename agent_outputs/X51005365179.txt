@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 20.00,
+  "total_amount_after_tax": 21.20,
+  "items": [
+    {
+      "item_name": "AIR ADAPTOR",
+      "item_amount": 20.00
+    }
+  ]
+}
+```

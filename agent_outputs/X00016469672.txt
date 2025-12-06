@@ -1,0 +1,40 @@
+```json
+{
+  "total_amount_before_tax": 327.00,
+  "total_amount_after_tax": 327.00,
+  "items": [
+    {
+      "item_name": "REPAIR ENGINE POWER SPRAYER (1UNIT) workmanship & service",
+      "item_amount": 80.00
+    },
+    {
+      "item_name": "GIANT 606 OVERFLOW ASSY",
+      "item_amount": 160.00
+    },
+    {
+      "item_name": "ENGINE OIL",
+      "item_amount": 17.00
+    },
+    {
+      "item_name": "GREASE FOR TOOLS 40ML (AKODA)",
+      "item_amount": 10.00
+    },
+    {
+      "item_name": "EY20 PLUG CHAMPION",
+      "item_amount": 6.00
+    },
+    {
+      "item_name": "STARTER TALI",
+      "item_amount": 8.00
+    },
+    {
+      "item_name": "EY20 STARTER HANDLE",
+      "item_amount": 10.00
+    },
+    {
+      "item_name": "HD40 1L COTIN",
+      "item_amount": 36.00
+    }
+  ]
+}
+```

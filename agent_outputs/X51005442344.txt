@@ -5,7 +5,7 @@
   "items": [
     {
       "item_name": "10' WING COMPASS",
-      "item_amount": 50.08
+      "item_amount": 50.88
     },
     {
       "item_name": "1/8'-3/4\" 12PCS HOLLOW PUNCH SET",
