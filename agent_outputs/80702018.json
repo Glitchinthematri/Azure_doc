@@ -1,0 +1,21 @@
+{
+    "total_amount_before_tax": 2640.0,
+    "total_amount_after_tax": 1980.0,
+    "items": [
+        {
+            "item_name": "Advertising - Binghamton, N. Y.",
+            "item_amount": 2640.0
+        },
+        {
+            "item_name": "Less 10%",
+            "item_amount": 264.0
+        },
+        {
+            "item_name": "Less 16 2/3%",
+            "item_amount": 396.0
+        }
+    ],
+    "file_name": "80702018.jpg",
+    "internal_check_passed": false,
+    "calculated_items_sum": 3300.0
+}

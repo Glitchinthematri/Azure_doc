@@ -1,0 +1,13 @@
+{
+    "total_amount_before_tax": 1400.0,
+    "total_amount_after_tax": 1400.0,
+    "items": [
+        {
+            "item_name": "TRIUMPH",
+            "item_amount": 1400.0
+        }
+    ],
+    "file_name": "80703441.jpg",
+    "internal_check_passed": true,
+    "calculated_items_sum": 1400.0
+}

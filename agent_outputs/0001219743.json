@@ -1,0 +1,17 @@
+{
+    "total_amount_before_tax": 690.0,
+    "total_amount_after_tax": 738.0,
+    "items": [
+        {
+            "item_name": "11 x 14",
+            "item_amount": 270.0
+        },
+        {
+            "item_name": "1 x 1",
+            "item_amount": 420.0
+        }
+    ],
+    "file_name": "0001219743.jpg",
+    "internal_check_passed": true,
+    "calculated_items_sum": 690.0
+}

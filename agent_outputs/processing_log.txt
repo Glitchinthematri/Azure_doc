@@ -1,0 +1,60 @@
+⭐ Starting real-time file monitor on folder: img...
+⭐ Press Ctrl+C to stop monitoring.
+============================================================
+🚀 Starting agent for file: 0001219743.jpg
+Analyzing document: img\0001219743.jpg...
+💰 Internal Check: Items sum (690.0) == Before Tax (690.0)? -> True
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\0001219743.json
+============================================================
+🚀 Starting agent for file: 0001219743.jpg
+Analyzing document: img\0001219743.jpg...
+💰 Internal Check: Items sum (690.0) == Before Tax (690.0)? -> True
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\0001219743.json
+============================================================
+🚀 Starting agent for file: 92679791.jpg
+Analyzing document: img\92679791.jpg...
+💰 Internal Check: Items sum (500.0) == Before Tax (500.0)? -> True
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\92679791.json
+============================================================
+🚀 Starting agent for file: 92679791.jpg
+Analyzing document: img\92679791.jpg...
+💰 Internal Check: Items sum (500.0) == Before Tax (500.0)? -> True
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\92679791.json
+============================================================
+🚀 Starting agent for file: 80702018.jpg
+Analyzing document: img\80702018.jpg...
+💰 Internal Check: Items sum (1980.0) == Before Tax (2640.0)? -> False
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\80702018.json
+============================================================
+🚀 Starting agent for file: 80702018.jpg
+Analyzing document: img\80702018.jpg...
+💰 Internal Check: Items sum (3300.0) == Before Tax (2640.0)? -> False
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\80702018.json
+============================================================
+🚀 Starting agent for file: X00016469619.jpg
+Analyzing document: img\X00016469619.jpg...
+💰 Internal Check: Items sum (60.31) == Before Tax (60.31)? -> True
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\X00016469619.json
+============================================================
+🚀 Starting agent for file: X51005442333.jpg
+Analyzing document: img\X51005442333.jpg...
+💰 Internal Check: Items sum (6.9) == Before Tax (6.51)? -> False
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\X51005442333.json
+
+Monitor stopped by user.
+⭐ Starting real-time file monitor on folder: img...
+⭐ Press Ctrl+C to stop monitoring.
+============================================================
+🚀 Starting agent for file: 80703441.jpg
+Analyzing document: img\80703441.jpg...
+💰 Internal Check: Sum (1400.0) == Target (1400.0)? -> True
+✅ Response validated, checked, and cleaned.
+✅ Successfully saved structured JSON data to: agent_outputs\80703441.json

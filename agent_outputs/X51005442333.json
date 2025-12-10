@@ -1,0 +1,21 @@
+{
+    "total_amount_before_tax": 6.51,
+    "total_amount_after_tax": 6.9,
+    "items": [
+        {
+            "item_name": "Fried Noodle (S)",
+            "item_amount": 2.0
+        },
+        {
+            "item_name": "Pork",
+            "item_amount": 2.7
+        },
+        {
+            "item_name": "Vegetable",
+            "item_amount": 2.2
+        }
+    ],
+    "file_name": "X51005442333.jpg",
+    "internal_check_passed": false,
+    "calculated_items_sum": 6.9
+}

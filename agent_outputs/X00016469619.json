@@ -1,0 +1,17 @@
+{
+    "total_amount_before_tax": 60.31,
+    "total_amount_after_tax": 60.3,
+    "items": [
+        {
+            "item_name": "ST-PRIVILEGE CARD/GD",
+            "item_amount": 10.0
+        },
+        {
+            "item_name": "GF-TABLE LAMP/STITCH",
+            "item_amount": 50.31
+        }
+    ],
+    "file_name": "X00016469619.jpg",
+    "internal_check_passed": true,
+    "calculated_items_sum": 60.31
+}
