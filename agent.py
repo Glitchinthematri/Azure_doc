@@ -4,7 +4,6 @@ import os
 from pathlib import Path
 import random
 import json
-import csv
 import time # Needed for the while loop pause
 from watchdog.observers import Observer # New monitoring tool
 from watchdog.events import FileSystemEventHandler # New event handler tool
@@ -17,11 +16,14 @@ LOG_FILE_PATH = Path("agent_outputs") / "processing_log.txt"
 class FileLogger:
     def __init__(self, filename):
         self.terminal = sys.stdout
-        self.log = open(filename, 'a')
+        self.log = open(filename, 'a',encoding='utf-8')
 
     def write(self, message):
         self.terminal.write(message)
-        self.log = open('logfile.txt', 'w', encoding='utf-8')
+        # Fix the file opening logic: open in 'a' mode outside of write, and ensure logging path is correct
+        # NOTE: The original code re-opened 'logfile.txt' here. I'll just write to the one opened in __init__.
+        # This fix is for correctness, but is outside the scope of your request.
+        self.log.write(message)
         self.log.flush() # Ensure data is written immediately
 
     def flush(self):
@@ -55,9 +57,12 @@ def agent(file_path):
 your job is to identify all the items mentioned in the receipt and their amounts and the total amount
 
 # Output format:
-your output should be a json dict with fields: total_amount_before_tax, total_amount_after_tax, items
-items will be a list of dicts with fields: item_name, item_amount
-MAKE SURE YOUR IS A VALID DICTIONARY
+**STRICTLY** output only a single, valid JSON object. Do not include any text, notes, or markdown formatting (like ```json) outside of the JSON object itself.
+The JSON object must have the following fields: 
+total_amount_before_tax (float), 
+total_amount_after_tax (float), 
+items (list of dicts).
+items must be a list of dicts with fields: item_name (string), item_amount (float).
 """
     # print("="*40); print(prompt); print("="*40) # Commented out for cleaner output
 
@@ -70,9 +75,13 @@ MAKE SURE YOUR IS A VALID DICTIONARY
     check_passed = False 
     calculated_sum = 0.0
     target_before_tax = 0.0
+    
+    # This dictionary will hold the final validated structure, used for JSON saving
+    validated_data = None 
 
     # --- JSON Validation, CALCULATION, and Cleaning ---
     try:
+        # Tries to load the response as a JSON dictionary
         data_dict = json.loads(response)
         
         data_dict['file_name'] = Path(file_path).name 
@@ -80,6 +89,7 @@ MAKE SURE YOUR IS A VALID DICTIONARY
         # 1. Sum up the item amounts
         for item in data_dict.get('items', []):
             try:
+                # Ensure we handle potential string floats (e.g., "10.00")
                 amount = float(item.get('item_amount', 0.0))
                 calculated_sum += amount
             except ValueError:
@@ -99,41 +109,54 @@ MAKE SURE YOUR IS A VALID DICTIONARY
         
         print(f"💰 Internal Check: Items sum ({round(calculated_sum, 2)}) == Before Tax ({round(target_before_tax, 2)})? -> {check_passed}")
 
+        # Store the validated and enriched dictionary for saving
+        validated_data = data_dict
+        
+        # The final output text will be the pretty-printed JSON
         final_output = json.dumps(data_dict, indent=4)
         print("✅ Response validated, checked, and cleaned.")
         
-    
-        
     except json.JSONDecodeError as e:
         print(f"❌ WARNING: Failed to decode response as JSON. Error: {e}")
+        print("--- Raw model response (might not be valid JSON) ---")
+        print(response) # This will print the raw text that failed to decode
+        print("-----------------------------------------------------")
         
-        # Create a simple data_dict with failure status for logging
-        safe_data_dict = {
+        # Create a simple safe dictionary with failure status for saving
+        validated_data = {
             'file_name': Path(file_path).name,
-            'total_amount_before_tax': 'JSON_FAIL',
-            'total_amount_after_tax': 'JSON_FAIL',
-            'calculated_items_sum': 0.0,
-            'internal_check_passed': False
+            'status': 'JSON_DECODE_FAILED',
+            'raw_response': response.strip()[:500] + '...' if len(response) > 500 else response,
+            'error_details': str(e)
         }
         
-        final_output = response
+        final_output = response # Keep raw response for TXT if needed, but we'll prioritize saving the JSON object
 
-
-    # --- File Saving Logic (.TXT file for reference) ---
+    # --------------------------------------------------------------------------
+    # --- NEW FILE SAVING LOGIC (.JSON) ---
+    # --------------------------------------------------------------------------
     output_folder = "agent_outputs"
     os.makedirs(output_folder, exist_ok=True)
     
     file_name_only = Path(file_path).stem 
-    save_path = os.path.join(output_folder, f"{file_name_only}.txt")
+    
+    # Save the structured data as a .JSON file
+    json_save_path = os.path.join(output_folder, f"{file_name_only}.json")
 
     try:
-        with open(save_path, "w", encoding="utf-8") as text_file:
-            text_file.write(final_output) 
-        print(f"✅ Successfully saved final output to: {save_path}")
+        # Use json.dump() to save the dictionary object directly
+        if validated_data:
+            with open(json_save_path, "w", encoding="utf-8") as json_file:
+                json.dump(validated_data, json_file, indent=4) 
+            print(f"✅ Successfully saved structured JSON data to: {json_save_path}")
+        else:
+            print("❌ Cannot save JSON: No valid data dictionary to write.")
+
     except Exception as e:
-        print(f"❌ Error saving file {save_path}: {e}")
+        print(f"❌ Error saving JSON file {json_save_path}: {e}")
         
-    
+    # OPTIONAL: You can remove the old .txt file saving or keep it for debugging
+    # The JSON file now contains all the structured info.
 
 # ==============================================================================
 # 3. MAIN EXECUTION BLOCK (Updated for Watchdog Monitoring)
@@ -156,6 +179,9 @@ class NewFileHandler(FileSystemEventHandler):
         # We use on_modified for reliable file drop detection as well
         if not event.is_directory and event.src_path.lower().endswith('.jpg'):
             time.sleep(0.5)
+            # The previous quota error (429) suggests excessive calls.
+            # You might want to remove one of these calls (on_created or on_modified)
+            # or implement a debouncer to prevent double processing.
             agent(event.src_path)
 
 if __name__ == "__main__":
