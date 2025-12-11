@@ -1,0 +1,12 @@
+```json
+{
+  "total_amount_before_tax": 52540.05,
+  "total_amount_after_tax": 52540.05,
+  "items": [
+    {
+      "item_name": "Royalties for the month of August 1984",
+      "item_amount": 52540.05
+    }
+  ]
+}
+```

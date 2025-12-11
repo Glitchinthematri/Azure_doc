@@ -4,16 +4,24 @@
   "total_amount_after_tax": 60.30,
   "items": [
     {
+<<<<<<< HEAD
       "item_name": "ST-PRIVILEGE CARD/GD",
+=======
+      "item_name": "ST-PRIVILEGE CARD/GD INDAH",
+>>>>>>> task2
       "item_amount": 10.00
     },
     {
       "item_name": "GF-TABLE LAMP/STITCH",
+<<<<<<< HEAD
       "item_amount": 55.90
     },
     {
       "item_name": "@DISC",
       "item_amount": -5.59
+=======
+      "item_amount": 50.31
+>>>>>>> task2
     }
   ]
 }
